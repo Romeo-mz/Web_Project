@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Js Drum Kit</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+
+        <div class="keys">
+            <div data-key="65" class="key">
+                <kbd>A</kbd>
+                <span class="sound">kick</span>
+            </div>
+
+            <div data-key="90" class="key">
+                <kbd>Z</kbd>
+                <span class="sound">clap</span>
+            </div>
+
+            <div data-key="69" class="key">
+                <kbd>E</kbd>
+                <span class="sound">snare</span>
+            </div>    
+        
+        </div>
+        
+        <audio data-key="65" src="drums/kick.wav"></audio>
+        <audio data-key="90" src="drums/clap.wav"></audio>
+        <audio data-key="69" src="drums/snare.wav"></audio>
+    </body>
+</html>
