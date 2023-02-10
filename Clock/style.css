@@ -1,0 +1,48 @@
+html {
+    background-image: url("img/background.webp");
+    filter: blur(1px);
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-position: center;
+    font-family: 'Segoe UI';
+    text-align: center;
+    font-size: 10px;
+}
+
+body {
+    margin: 0;
+    display: flex;
+    flex: 1;
+    font-size: 2rem;
+    min-height: 100vh;
+    align-items: center;
+}
+.clock {
+    width: 30rem;
+    height: 30rem;
+    border: 20px solid white;
+    border-radius: 50%;
+    margin: 50px auto; /* auto to center the clock */
+    position: relative;
+    padding: 2rem;
+    box-shadow:
+      0 0 0 4px rgba(0,0,0,0.1), /*  ombre extérieure décalée de 4 pixels de couleur de noir à 10% d'opacité. */
+      inset 0 0 0 3px #EFEFEF, /*  ombre intérieur décalée de 3 pixels */
+      inset 0 0 10px black,
+      0 0 10px rgba(0,0,0,0.2);
+}
+
+.inside-clock {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transform: translateY(-3px); /* account for the height of the clock hands */
+}
+
+.hand {
+    width: 50%;
+    height: 6px;
+    background: black;
+    position: absolute;
+    top: 50%;
+  }
