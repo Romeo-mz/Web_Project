@@ -1,6 +1,6 @@
 html {
     background-image: url("img/background.webp");
-    filter: blur(1px);
+    filter: blur(0.5px);
     background-repeat:no-repeat;
     background-size: cover;
     background-position: center;
@@ -41,8 +41,22 @@ body {
 
 .hand {
     width: 50%;
-    height: 6px;
+    height: 8px;
     background: black;
     position: absolute;
     top: 50%;
+    transform-origin: 100%;
+    transform: rotate(90deg);
+    transition: all 0.05s;
+    transition-timing-function: cubic-bezier(.8,.15,.58,2.67);
   }
+
+.clock .hand.min{
+    background-color: teal;
+    height: 4px;
+}
+
+.clock .hand.sec{
+    background-color: greenyellow;
+    height: 1px;
+}
