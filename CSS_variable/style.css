@@ -1,0 +1,16 @@
+body {
+    font-family: Helvetica, sans-serif;
+    font-size: 30px;
+    text-align: center;
+    background-color:#921566;
+    color: white;
+    font-weight: 100;
+}
+
+.controls {
+    margin-bottom: 50px;
+}
+
+input {
+    width: 100px;
+}
