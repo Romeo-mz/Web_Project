@@ -21,15 +21,25 @@ body {
 .panels {
     min-height: 100vh;
     overflow: hidden;
+    display: flex;
+    
 }
 
 .panel {
     background: rgb(83, 131, 235);
     box-shadow: inset 0 0 0 5px rgba(255,255,255,0.1);
-    color : wheat;
+    color : rgb(231, 182, 91);
     text-align: center;
     align-items: center;
 
     background-size: cover;
     background-position: cover;
+
+    flex:1;
 }
+
+.panel1 { background-image: url('img/rome.png');}
+.panel2 { background-image: url('img/rome_speech.png');}
+.panel3 { background-image: url('img/mid.jpg');}
+.panel4 { background-image: url('img/wine.png');}
+.panel5 { background-image: url('img/fall.png');}
