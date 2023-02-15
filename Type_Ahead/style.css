@@ -1,8 +1,9 @@
 html {
+    box-sizing: border-box;
     font-family: Haettenschweiler;
     background-color: rgb(150, 239, 164);
     font-size: 15px;
-    box-sizing: border-box;
+    font-weight: 100;
 }
 *, *:before, *:after {
     box-sizing: inherit;
@@ -17,12 +18,12 @@ input {
     max-width: 400px;
     margin: 40px auto;
 
-    border: solid red;
 }
 
 input.search {
     margin: 0;
     text-align: center;
+    background-color: rgb(244, 199, 127);
     outline: 0; /* Delete the highlight when it's selected */
     border: 10px solid rgba(96, 238, 124, 0.834);
     width: 120%;
@@ -42,11 +43,27 @@ input.search {
 }
 
 .suggestions li {
-    background-color: wheat;
+    background-color:rgb(244, 199, 127);
     list-style: none;
-    border-bottom: 1px solid #D8D8D8 ;
+    border-bottom: 1px solid rgba(96, 238, 124, 0.834) ;
     margin: 0;
+    padding: 20px;
     display: flex;
     justify-content: space-between;
     text-transform: capitalize;
+    transition: background 0.2s;
+    justify-content: space-between;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.14);
 }
+
+.suggestions li:nth-child(even) {
+    transform: perspective(100px) rotateX(3deg) translateY(2px) scale(1.001);
+    background: linear-gradient(to bottom,  rgb(242, 214, 168) 0%,rgb(244, 199, 127) 100%);
+  }
+
+
+.suggestions li:nth-child(odd) {
+    transform: perspective(100px) rotateX(-3deg) translateY(3px);
+    background: linear-gradient(to top,  rgb(242, 214, 168) 0%,rgb(244, 199, 127) 100%);
+  }
+  
