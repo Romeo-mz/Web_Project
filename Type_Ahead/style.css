@@ -1,0 +1,52 @@
+html {
+    font-family: Haettenschweiler;
+    background-color: rgb(150, 239, 164);
+    font-size: 15px;
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+  }
+
+input {
+    width: 100%;
+    padding: 20px;
+}
+
+.search-form {
+    max-width: 400px;
+    margin: 40px auto;
+
+    border: solid red;
+}
+
+input.search {
+    margin: 0;
+    text-align: center;
+    outline: 0; /* Delete the highlight when it's selected */
+    border: 10px solid rgba(96, 238, 124, 0.834);
+    width: 120%;
+    left: -10%;
+    position: relative;
+    top: 15px;
+    z-index: 2;
+    border-radius: 5px;
+    font-size: 40px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.12), inset 0 0 2px rgba(0, 0, 0, 0.19);;
+}
+
+.suggestions { 
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+.suggestions li {
+    background-color: wheat;
+    list-style: none;
+    border-bottom: 1px solid #D8D8D8 ;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    text-transform: capitalize;
+}
