@@ -1,6 +1,11 @@
+@font-face {
+    font-family: Lemon-Milk;
+    src: local('LEMONMILK-REGULAR'),
+        url('font/LEMONMILK-Regular.otf');
+}
 html {
     box-sizing: border-box;
-    font-family: Haettenschweiler;
+    font-family: Lemon-Milk ;
     background-color: rgb(150, 239, 164);
     font-size: 15px;
     font-weight: 100;
@@ -67,3 +72,6 @@ input.search {
     background: linear-gradient(to top,  rgb(242, 214, 168) 0%,rgb(244, 199, 127) 100%);
   }
   
+.hl {
+    background: rgba(96, 238, 124, 0.834);
+}
